@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>jQuery堆叠卡片轮播图</title>
+<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="site">
+<div class="wrapper horizontal demo1">
+<h3>Demo 1</h3>
+<ul class="container">
+<li class="cards_list">
+<div class="img">
+<img src="img/p1.png" alt="">
+</div>
+<div class="main_con">
+<h4 class="name">醉刘的摄影狮</h4>
+<p class="content">
+准旗舰游戏拍照手机魅族 X8，不止有实力，还有最美刘海屏！
+</p>
+<p class="label">魅族 X8</p>
+</div>
+</li>
+<li class="cards_list">
+<div class="img">
+<img src="img/p2.png" alt="">
+</div>
+<div class="main_con">
+<h4 class="name">屌丝扮海绵</h4>
+<p class="content">
+“窗含西岭千秋雪” 魅族 16th 用旗舰双摄带你领略诗句中的美景。
+</p>
+<p class="label">魅族 16th</p>
+</div>
+</li>
+<li class="cards_list">
+<div class="img">
+<img src="img/p3.png" alt="">
+</div>
+<div class="main_con">
+<h4 class="name">郑金龙</h4>
+<p class="content">
+千元最强性能手机登场，高通骁龙 710 次旗舰级处理器加持，玩王者荣耀 Vulkan 模式请认准魅族 X8。
+</p>
+<p class="label">魅族 X8</p>
+</div>
+</li>
+<li class="cards_list">
+<div class="img">
+<img src="img/p4.png" alt="">
+</div>
+<div class="main_con">
+<h4 class="name">歩惊云</h4>
+<p class="content">
+这款匠心精神打造的十五周年旗舰机，再不下手就要后悔啦~
+</p>
+<p class="label">魅族 15</p>
+</div>
+</li>
+<li class="cards_list">
+<div class="img">
+<img src="img/p5.png" alt="">
+</div>
+<div class="main_con">
+<h4 class="name">Keicy520</h4>
+<p class="content">
+妙用 Flyme 分身，做生活和工作的「两面派」。
+</p>
+<p class="label">功能解析</p>
+</div>
+</li>
+<li class="cards_list">
+<div class="img">
+<img src="img/p6.png" alt="">
+</div>
+<div class="main_con">
+<h4 class="name">小墨灰</h4>
+<p class="content">
+工作和学习中的沟通总离不开邮件，而 Flyme 邮箱的出色体验为我们带来的不只是生产力。
+</p>
+<p class="label">功能解析</p>
+</div>
+</li>
+<li class="cards_list">
+<div class="img">
+
+<img src="img/p7.png" alt="">
+</div>
+<div class="main_con">
+<h4 class="name">xrx3p</h4>
+<p class="content">
+摄影离不开适当的后期，好在如今你可以在魅族手机上轻松完成操作。
+</p>
+<p class="label">摄影技巧</p>
+</div>
+</li>
+<li class="cards_list">
+<div class="img">
+<img src="img/p8.png" alt="">
+</div>
+<div class="main_con">
+<h4 class="name">hooyeah</h4>
+<p class="content">
+魅族 Note9 邀请函 JK 服妹子出镜，谁才是最美游戏姬？
+</p>
+<p class="label">魅族 Note9</p>
+</div>
+</li>
+<li class="cards_list">
+<div class="img">
+<img src="img/p9.png" alt="">
+</div>
+<div class="main_con">
+<h4 class="name">不腻映像 </h4>
+<p class="content">
+轻奢旗舰魅族 16 X 惊艳亮相!经典汝窑白配色与小姐姐更搭哦~
+</p>
+<p class="label">魅族16X</p>
+</div>
+</li>
+<li class="cards_list">
+<div class="img">
+<img src="img/p10.png" alt="">
+</div>
+<div class="main_con">
+<h4 class="name">小墨灰</h4>
+<p class="content">
+做为一家讲究用户极致体验的手机厂商，魅族对于系统输入法依然费尽心思打磨。
+</p>
+<p class="label">魅族输入法功能解析</p>
+</div>
+</li>
+<li class="cards_list">
+<div class="img">
+<img src="img/p11.png" alt="">
+</div>
+<div class="main_con">
+<h4 class="name">王员外可爱多</h4>
+<p class="content">
+从「青年良品」到「国民拍照手机」，Note 系列依旧是最值得购买的千元机。
+</p>
+<p class="label">魅族 Note8</p>
+</div>
+</li>
+</ul>
+<i class="btn-direct btn-left">
+<span class="shift-left"></span>
+</i>
+<i class="btn-direct btn-right">
+<span class="shift-right"></span>
+</i>
+</div>
+<div class="wrapper vertical demo2">
+<h3>Demo 2</h3>
+<ul class="container">
+<li class="cards_list">
+<div class="img">
+<img src="img/p1.png" alt="">
+</div>
+<div class="main_con">
+<h4 class="name">醉刘的摄影狮</h4>
+<p class="content">
+准旗舰游戏拍照手机魅族 X8，不止有实力，还有最美刘海屏！
+</p>
+<p class="label">魅族 X8</p>
+</div>
+</li>
+<li class="cards_list">
+<div class="img">
+<img src="img/p2.png" alt="">
+</div>
+<div class="main_con">
+<h4 class="name">屌丝扮海绵</h4>
+<p class="content">
+“窗含西岭千秋雪” 魅族 16th 用旗舰双摄带你领略诗句中的美景。
+</p>
+<p class="label">魅族 16th</p>
+</div>
+</li>
+<li class="cards_list">
+<div class="img">
+<img src="img/p3.png" alt="">
+</div>
+<div class="main_con">
+<h4 class="name">郑金龙</h4>
+<p class="content">
+千元最强性能手机登场，高通骁龙 710 次旗舰级处理器加持，玩王者荣耀 Vulkan 模式请认准魅族 X8。
+</p>
+<p class="label">魅族 X8</p>
+</div>
+</li>
+<li class="cards_list">
+<div class="img">
+<img src="img/p4.png" alt="">
+</div>
+<div class="main_con">
+<h4 class="name">歩惊云</h4>
+<p class="content">
+这款匠心精神打造的十五周年旗舰机，再不下手就要后悔啦~
+</p>
+<p class="label">魅族 15</p>
+</div>
+</li>
+<li class="cards_list">
+<div class="img">
+<img src="img/p5.png" alt="">
+</div>
+<div class="main_con">
+<h4 class="name">Keicy520</h4>
+<p class="content">
+妙用 Flyme 分身，做生活和工作的「两面派」。
+</p>
+<p class="label">功能解析</p>
+</div>
+</li>
+<li class="cards_list">
+<div class="img">
+<img src="img/p6.png" alt="">
+</div>
+<div class="main_con">
+<h4 class="name">小墨灰</h4>
+<p class="content">
+工作和学习中的沟通总离不开邮件，而 Flyme 邮箱的出色体验为我们带来的不只是生产力。
+</p>
+<p class="label">功能解析</p>
+</div>
+</li>
+<li class="cards_list">
+<div class="img">
+<img src="img/p7.png" alt="">
+</div>
+<div class="main_con">
+<h4 class="name">xrx3p</h4>
+<p class="content">
+摄影离不开适当的后期，好在如今你可以在魅族手机上轻松完成操作。
+</p>
+<p class="label">摄影技巧</p>
+</div>
+</li>
+<li class="cards_list">
+<div class="img">
+<img src="img/p8.png" alt="">
+</div>
+<div class="main_con">
+<h4 class="name">hooyeah</h4>
+<p class="content">
+魅族 Note9 邀请函 JK 服妹子出镜，谁才是最美游戏姬？
+</p>
+<p class="label">魅族 Note9</p>
+</div>
+</li>
+<li class="cards_list">
+<div class="img">
+<img src="img/p9.png" alt="">
+</div>
+<div class="main_con">
+ <h4 class="name">不腻映像 </h4>
+<p class="content">
+轻奢旗舰魅族 16 X 惊艳亮相!经典汝窑白配色与小姐姐更搭哦~
+</p>
+<p class="label">魅族16X</p>
+</div>
+</li>
+<li class="cards_list">
+<div class="img">
+<img src="img/p10.png" alt="">
+</div>
+<div class="main_con">
+<h4 class="name">小墨灰</h4>
+<p class="content">
+做为一家讲究用户极致体验的手机厂商，魅族对于系统输入法依然费尽心思打磨。
+</p>
+<p class="label">魅族输入法功能解析</p>
+</div>
+</li>
+<li class="cards_list">
+<div class="img">
+<img src="img/p11.png" alt="">
+</div>
+<div class="main_con">
+<h4 class="name">王员外可爱多</h4>
+<p class="content">
+从「青年良品」到「国民拍照手机」，Note 系列依旧是最值得购买的千元机。
+</p>
+<p class="label">魅族 Note8</p>
+</div>
+</li>
+</ul>
+<i class="btn-direct btn-left">
+<span class="shift-left"></span>
+</i>
+<i class="btn-direct btn-right">
+<span class="shift-right"></span>
+</i>
+</div>
+<div class="wrapper horizontal demo3">
+<h3>Demo 3</h3>
+<ul class="container">
+<li class="cards_list">
+<div class="img">
+<img src="img/p1.png" alt="">
+</div>
+<div class="main_con">
+<h4 class="name">醉刘的摄影狮</h4>
+<p class="content">
+准旗舰游戏拍照手机魅族 X8，不止有实力，还有最美刘海屏！
+</p>
+<p class="label">魅族 X8</p>
+</div>
+</li>
+<li class="cards_list">
+<div class="img">
+<img src="img/p2.png" alt="">
+</div>
+<div class="main_con">
+<h4 class="name">屌丝扮海绵</h4>
+<p class="content">
+“窗含西岭千秋雪” 魅族 16th 用旗舰双摄带你领略诗句中的美景。
+</p>
+<p class="label">魅族 16th</p>
+</div>
+</li>
+<li class="cards_list">
+<div class="img">
+<img src="img/p3.png" alt="">
+</div>
+<div class="main_con">
+<h4 class="name">郑金龙</h4>
+<p class="content">
+千元最强性能手机登场，高通骁龙 710 次旗舰级处理器加持，玩王者荣耀 Vulkan 模式请认准魅族 X8。
+</p>
+<p class="label">魅族 X8</p>
+</div>
+</li>
+<li class="cards_list">
+<div class="img">
+<img src="img/p4.png" alt="">
+</div>
+<div class="main_con">
+<h4 class="name">歩惊云</h4>
+<p class="content">
+这款匠心精神打造的十五周年旗舰机，再不下手就要后悔啦~
+</p>
+<p class="label">魅族 15</p>
+</div>
+</li>
+<li class="cards_list">
+<div class="img">
+<img src="img/p5.png" alt="">
+</div>
+<div class="main_con">
+<h4 class="name">Keicy520</h4>
+<p class="content">
+妙用 Flyme 分身，做生活和工作的「两面派」。
+</p>
+<p class="label">功能解析</p>
+</div>
+</li>
+<li class="cards_list">
+<div class="img">
+<img src="img/p6.png" alt="">
+</div>
+<div class="main_con">
+<h4 class="name">小墨灰</h4>
+<p class="content">
+工作和学习中的沟通总离不开邮件，而 Flyme 邮箱的出色体验为我们带来的不只是生产力。
+</p>
+<p class="label">功能解析</p>
+</div>
+</li>
+<li class="cards_list">
+<div class="img">
+<img src="img/p7.png" alt="">
+</div>
+<div class="main_con">
+<h4 class="name">xrx3p</h4>
+<p class="content">
+摄影离不开适当的后期，好在如今你可以在魅族手机上轻松完成操作。
+</p>
+<p class="label">摄影技巧</p>
+</div>
+</li>
+<li class="cards_list">
+<div class="img">
+<img src="img/p8.png" alt="">
+</div>
+<div class="main_con">
+<h4 class="name">hooyeah</h4>
+<p class="content">
+魅族 Note9 邀请函 JK 服妹子出镜，谁才是最美游戏姬？
+</p>
+<p class="label">魅族 Note9</p>
+</div>
+</li>
+<li class="cards_list">
+<div class="img">
+<img src="img/p9.png" alt="">
+</div>
+<div class="main_con">
+<h4 class="name">不腻映像 </h4>
+<p class="content">
+轻奢旗舰魅族 16 X 惊艳亮相!经典汝窑白配色与小姐姐更搭哦~
+</p>
+<p class="label">魅族16X</p>
+</div>
+</li>
+<li class="cards_list">
+<div class="img">
+<img src="img/p10.png" alt="">
+</div>
+<div class="main_con">
+<h4 class="name">小墨灰</h4>
+<p class="content">
+做为一家讲究用户极致体验的手机厂商，魅族对于系统输入法依然费尽心思打磨。
+</p>
+<p class="label">魅族输入法功能解析</p>
+</div>
+</li>
+<li class="cards_list">
+<div class="img">
+<img src="img/p11.png" alt="">
+</div>
+<div class="main_con">
+<h4 class="name">王员外可爱多</h4>
+<p class="content">
+从「青年良品」到「国民拍照手机」，Note 系列依旧是最值得购买的千元机。
+</p>
+<p class="label">魅族 Note8</p>
+</div>
+</li>
+</ul>
+<i class="btn-direct btn-left">
+<span class="shift-left"></span>
+</i>
+<i class="btn-direct btn-right">
+<span class="shift-right"></span>
+</i>
+</div>
+<div class="wrapper horizontal demo4">
+<h3>Demo 4</h3>
+<ul class="container">
+<li class="cards_list">
+<div class="img">
+<img src="img/p1.png" alt="">
+</div>
+<div class="main_con">
+<h4 class="name">醉刘的摄影狮</h4>
+<p class="content">
+准旗舰游戏拍照手机魅族 X8，不止有实力，还有最美刘海屏！
+</p>
+<p class="label">魅族 X8</p>
+</div>
+</li>
+<li class="cards_list">
+<div class="img">
+<img src="img/p2.png" alt="">
+</div>
+<div class="main_con">
+<h4 class="name">屌丝扮海绵</h4>
+<p class="content">
+“窗含西岭千秋雪” 魅族 16th 用旗舰双摄带你领略诗句中的美景。
+</p>
+<p class="label">魅族 16th</p>
+</div>
+</li>
+<li class="cards_list">
+<div class="img">
+<img src="img/p3.png" alt="">
+</div>
+<div class="main_con">
+<h4 class="name">郑金龙</h4>
+<p class="content">
+千元最强性能手机登场，高通骁龙 710 次旗舰级处理器加持，玩王者荣耀 Vulkan 模式请认准魅族 X8。
+</p>
+<p class="label">魅族 X8</p>
+</div>
+</li>
+<li class="cards_list">
+<div class="img">
+<img src="img/p4.png" alt="">
+</div>
+<div class="main_con">
+<h4 class="name">歩惊云</h4>
+<p class="content">
+这款匠心精神打造的十五周年旗舰机，再不下手就要后悔啦~
+</p>
+<p class="label">魅族 15</p>
+</div>
+</li>
+<li class="cards_list">
+<div class="img">
+<img src="img/p5.png" alt="">
+</div>
+<div class="main_con">
+<h4 class="name">Keicy520</h4>
+<p class="content">
+妙用 Flyme 分身，做生活和工作的「两面派」。
+</p>
+<p class="label">功能解析</p>
+</div>
+</li>
+<li class="cards_list">
+<div class="img">
+<img src="img/p6.png" alt="">
+</div>
+<div class="main_con">
+<h4 class="name">小墨灰</h4>
+<p class="content">
+工作和学习中的沟通总离不开邮件，而 Flyme 邮箱的出色体验为我们带来的不只是生产力。
+</p>
+<p class="label">功能解析</p>
+</div>
+</li>
+<li class="cards_list">
+<div class="img">
+<img src="img/p7.png" alt="">
+</div>
+<div class="main_con">
+<h4 class="name">xrx3p</h4>
+<p class="content">
+摄影离不开适当的后期，好在如今你可以在魅族手机上轻松完成操作。
+</p>
+<p class="label">摄影技巧</p>
+</div>
+</li>
+<li class="cards_list">
+<div class="img">
+<img src="img/p8.png" alt="">
+</div>
+<div class="main_con">
+<h4 class="name">hooyeah</h4>
+<p class="content">
+魅族 Note9 邀请函 JK 服妹子出镜，谁才是最美游戏姬？
+</p>
+<p class="label">魅族 Note9</p>
+</div>
+</li>
+<li class="cards_list">
+<div class="img">
+<img src="img/p9.png" alt="">
+</div>
+<div class="main_con">
+<h4 class="name">不腻映像 </h4>
+<p class="content">
+轻奢旗舰魅族 16 X 惊艳亮相!经典汝窑白配色与小姐姐更搭哦~
+</p>
+<p class="label">魅族16X</p>
+</div>
+</li>
+<li class="cards_list">
+<div class="img">
+<img src="img/p10.png" alt="">
+</div>
+<div class="main_con">
+<h4 class="name">小墨灰</h4>
+<p class="content">
+做为一家讲究用户极致体验的手机厂商，魅族对于系统输入法依然费尽心思打磨。
+</p>
+<p class="label">魅族输入法功能解析</p>
+</div>
+</li>
+<li class="cards_list">
+<div class="img">
+<img src="img/p11.png" alt="">
+</div>
+<div class="main_con">
+<h4 class="name">王员外可爱多</h4>
+<p class="content">
+从「青年良品」到「国民拍照手机」，Note 系列依旧是最值得购买的千元机。
+</p>
+<p class="label">魅族 Note8</p>
+</div>
+</li>
+</ul>
+<i class="btn-direct btn-left">
+<span class="shift-left"></span>
+</i>
+<i class="btn-direct btn-right">
+<span class="shift-right"></span>
+</i>
+</div>
+</div>
+<script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src="js/carousel.js"></script>
+<script>
+
+        $(document).ready(function () {
+
+            $("div.wrapper").each(function (i, e) {
+                $(e).attr("ondragstart", "return false");
+            });
+
+            var $demo1 = $("div.demo1"),
+                $demo2 = $("div.demo2"),
+                $demo3 = $("div.demo3"),
+                $demo4 = $("div.demo4");
+
+            console.time("t");
+
+            var carousel1 = new Carousel($demo1.children("ul.container"), {
+                opacity: .9,
+                scale: [.9],
+                transition: "400ms",
+                switchBtn: $demo1.children("i.btn-direct"),
+                isClickCard: true,
+                isAuto: true,
+                interval: 4000
+            });
+  
+            var carousel2 = new Carousel($demo2.children("ul.container"), {
+                direction:"vertical",
+                scale: [.9],
+                transition: "300ms",
+                switchBtn: $demo2.children("i.btn-direct"),
+                offsetDistance:40,
+                isClickCard: true,
+                isAuto: true,
+                interval: 3000
+            });
+
+            var carousel3 = new Carousel($demo3.children("ul.container"), {
+                transition: ".4s",
+                switchBtn: $demo3.children("i.btn-direct"),
+                offsetDistance: $demo3.find("ul.container>li").eq(0).outerWidth() + 20,
+                isAuto: true,
+            });
+
+            var carousel4 = new Carousel($demo4.children("ul.container"), {
+                scale: [.9, .8],
+                transformOrigin: "center bottom",
+                transition: "300ms",
+                switchBtn: $demo4.children("i.btn-direct"),
+                offsetDistance: 220,
+                isClickCard: true,
+                isAuto: true
+            });
+            console.timeEnd("t");
+
+        })
+
+
+
+    </script>
+</body>
+</html>
