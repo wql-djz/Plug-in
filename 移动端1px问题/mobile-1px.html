@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, width=device-width">-->
+    <title>移动端1px边框问题</title>
+    <script>
+        (function () {
+            var clientWidth = window.screen.width;
+            var dpr = window.devicePixelRatio;
+            var vp = document.createElement('meta');
+            document.documentElement.style.fontSize = clientWidth > 414 ? '20px' : 20 * dpr * clientWidth / 360 + 'px';
+            vp.name = 'viewport';
+            vp.content = `initial-scale=${1.0 * 1 / dpr}, maximum-scale=${1.0 * 1 / dpr}, minimum-scale=${1.0 * 1 / dpr}, user-scalable=no, width=device-width`;
+            var m = document.getElementsByTagName('meta')[0];
+            m.parentNode.insertBefore(vp, m);
+        })();
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            text-size-adjust: none;
+        }
+
+        ul,
+        li {
+            list-style: none;
+        }
+
+        .lines {
+            width: 10rem;
+            margin: 0 auto;
+        }
+
+        .lines li {
+            border: 1px solid #cccccc;
+            height: 2.5rem;
+            line-height: 2.5rem;
+            text-align: center;
+            border-radius: 0.6rem;
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="lines">
+        <li>1</li>
+        <li>2</li>
+    </ul>
+</body>
+
+</html>
